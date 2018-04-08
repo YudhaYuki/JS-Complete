@@ -221,6 +221,7 @@ names[1] = 'Ben';
 console.log(names);
 */
 
+/*
 var john = ['John', 'Smith', 1990, 'programer', false];
 
 john.push('blue');
@@ -235,3 +236,46 @@ console.log(john);
 if (john.indexOf('teacher') === -1) {
     console.log('John is NOT a teacher');
 }
+*/
+
+
+
+
+
+
+
+
+///////////////////////// OBJECTS /////////////////////////////////
+
+
+// 1st way creating an object
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john.lastName);
+console.log(john['lastName']);
+
+var xyz = 'job';
+console.log(john[xyz]);
+
+john.lastName = 'Miller';
+john['job'] = 'Programmer';
+
+console.log(john);
+
+
+
+// 2nd way of creating an object
+var jane = new Object();
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane['yearOfBirth'] = 1969;
+jane['job'] = 'retired';
+jane['isMarried'] = true;
+
+console.log(jane);
