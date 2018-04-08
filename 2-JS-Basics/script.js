@@ -171,6 +171,16 @@ yearsUntilRetirement('Marry', 1948);
 */
 
 
+
+
+
+
+
+
+
+///////////////////////// EXPRESSION AND STATMENT /////////////////////////////////
+
+
 function someFun(par) {
     // code
 }
@@ -187,4 +197,41 @@ var x = 3
 // statments
 if (x === 5) {
     // do soemthing
+}
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////// ARRAY /////////////////////////////////
+
+/*
+var names = ['John', 'Jane', 'Mark'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[2]);
+
+names[1] = 'Ben';
+console.log(names);
+*/
+
+var john = ['John', 'Smith', 1990, 'programer', false];
+
+john.push('blue');
+john.unshift('Mr');
+john.pop();
+john.shift();
+
+console.log(john);
+
+// alert(john.indexOf('Smith'));
+
+if (john.indexOf('teacher') === -1) {
+    console.log('John is NOT a teacher');
 }
