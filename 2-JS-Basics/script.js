@@ -143,6 +143,7 @@ if (martinScore > marryScore && martinScore > sarahScore) {
 
 ///////////////////////// FUNCTIONS /////////////////////////////////
 
+/*
 function calculateAge(yearOfBirth) {
     var age = 2018 - yearOfBirth;
     return age;
@@ -167,3 +168,23 @@ function yearsUntilRetirement(name, year) {
 yearsUntilRetirement('Yudha', 1991);
 yearsUntilRetirement('John', 1969);
 yearsUntilRetirement('Marry', 1948);
+*/
+
+
+function someFun(par) {
+    // code
+}
+
+var someFunc = function(par) {
+    // code
+}
+
+// Expression
+3 + 4 ;
+var x = 3
+
+
+// statments
+if (x === 5) {
+    // do soemthing
+}
