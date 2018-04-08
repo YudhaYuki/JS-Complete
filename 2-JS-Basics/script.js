@@ -247,7 +247,7 @@ if (john.indexOf('teacher') === -1) {
 
 ///////////////////////// OBJECTS /////////////////////////////////
 
-
+/*
 // 1st way creating an object
 var john = {
     name: 'John',
@@ -279,3 +279,66 @@ jane['job'] = 'retired';
 jane['isMarried'] = true;
 
 console.log(jane);
+*/
+
+
+
+
+
+
+///////////////////////// OBJECTS and METHOD /////////////////////////////////
+
+// Version I
+/*
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge : function() {
+        return 2016 - this.yearOfBirth;
+    }
+};
+
+
+// console.log(john.family[2]);
+// console.log(john.calculateAge(1970));
+
+// console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);
+
+*/
+
+
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge : function() {
+        this.age = 2016 - this.yearOfBirth;
+    }
+};
+
+john.calculateAge();
+console.log(john);
+
+
+
+var mike = {
+    yearOfBirth: 1950,
+    calculateAge : function() {
+        this.age = 2016 - this.yearOfBirth;
+    }
+};
+
+mike.calculateAge();
+console.log(mike);
