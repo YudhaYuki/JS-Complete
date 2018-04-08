@@ -68,7 +68,7 @@ console.log(num);
 
 
 ///////////////////////// BOOLEAN LOGIC and SWITCH /////////////////////////////////
-
+/*
 var age = 20;
 
 if (age < 20) {
@@ -99,3 +99,71 @@ switch (job) {
     default:
         console.log('John does something else.');
 }
+*/
+
+
+
+
+
+
+
+
+///////////////////////// CHALLANGE I /////////////////////////////////
+/*
+var martinHeight = 180;
+var marryHeight = 170;
+var sarahHeight = 175;
+
+var martinAge = 25;
+var marryAge = 30;
+var sarahAge = 35
+
+var martinScore = martinHeight + martinAge * 5;
+var marryScore = marryHeight + marryAge * 5;
+var sarahScore = sarahHeight + sarahAge * 5;
+
+if (martinScore > marryScore && martinScore > sarahScore) {
+    console.log(`Martin wins the game with score ${martinScore}`)
+} else if (marryScore > martinScore && marryScore > sarahScore) {
+    console.log(`Marry wins the game with score ${marryScore}`);
+} else if (sarahScore > martinScore && sarahScore > marryScore) {
+    console.log(`Sarah wins the game with score ${sarahScore}`);
+} else if (marryScore === martinScore === sarahScore) {
+    console.log('The game is draw');
+} else {
+    console.log(`No body wins the game`);
+}
+
+*/
+
+
+
+
+
+
+///////////////////////// FUNCTIONS /////////////////////////////////
+
+function calculateAge(yearOfBirth) {
+    var age = 2018 - yearOfBirth;
+    return age;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1969);
+var ageMary = calculateAge(1948);
+
+
+function yearsUntilRetirement(name, year) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement >= 0) {
+        console.log(`${name} will be retired in ${retirement} years.`);        
+    } else {
+        console.log (`${name} is already retired`);
+    }
+}
+
+yearsUntilRetirement('Yudha', 1991);
+yearsUntilRetirement('John', 1969);
+yearsUntilRetirement('Marry', 1948);
