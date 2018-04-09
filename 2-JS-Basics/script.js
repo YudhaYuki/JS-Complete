@@ -315,7 +315,7 @@ console.log(john);
 
 */
 
-
+/*
 var john = {
     name: 'John',
     lastName: 'Smith',
@@ -342,3 +342,63 @@ var mike = {
 
 mike.calculateAge();
 console.log(mike);
+*/
+
+
+
+
+
+
+
+///////////////////////// LOOPS /////////////////////////////////
+
+for ( var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+
+var names = ['John', 'Jane', 'Marry', 'Mark', 'Bob'];
+/*
+for (var i = 0; i < 5; i++) {
+    console.log(names[i]);
+}
+*/
+
+
+// FOR LOOP
+/*
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+for (var i = names.length - 1; i >= 0; i--) {
+    console.log(names[i]);
+}
+*/
+
+// WHILE LOOP
+/*
+var i = 0;
+while(i < names.length) {
+    console.log(names[i]);
+    i++;
+}
+*/
+
+
+for (var i = 1; i <= names.length; i++) {
+    console.log(names[i]);
+
+    if (i === 3) {
+        break;
+    }
+}
+
+
+for (var i = 1; i <= names.length; i++) {
+    if (i === 3) {
+        continue;
+    }
+    
+    console.log(names[i]);
+}
