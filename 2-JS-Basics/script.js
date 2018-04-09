@@ -351,13 +351,15 @@ console.log(mike);
 
 
 ///////////////////////// LOOPS /////////////////////////////////
-
+/*
 for ( var i = 0; i < 10; i++) {
     console.log(i);
 }
 
 
 var names = ['John', 'Jane', 'Marry', 'Mark', 'Bob'];
+*/
+
 /*
 for (var i = 0; i < 5; i++) {
     console.log(names[i]);
@@ -385,7 +387,7 @@ while(i < names.length) {
 }
 */
 
-
+/*
 for (var i = 1; i <= names.length; i++) {
     console.log(names[i]);
 
@@ -402,3 +404,38 @@ for (var i = 1; i <= names.length; i++) {
     
     console.log(names[i]);
 }
+*/
+
+
+
+
+
+
+
+///////////////////////// CHALLANGE II /////////////////////////////////
+
+
+function printFullAge(years) {
+    var ages = [];    
+    var fullAges = [];
+
+    for (var i = 0; i < years.length; i++) {
+        ages[i] = 2016 - years[i];
+    }
+    
+    for (i = 0; i < ages.length; i++) {
+        if (ages[i] >= 18) {
+            console.log(`Person ${(i + 1)} is ${ages[i]} years old, and is of a full age.`);
+            fullAges.push(true);
+        } else {
+            console.log(`Person ${(i + 1)} is ${ages[i]} years old, and is NOT of a full age.`);  
+            fullAges.push(false);      
+        }
+    }
+
+    return fullAges;
+}
+
+years = [1982, 1984, 1986, 1991, 2006];
+var full_1 = printFullAge(years);
+var full_2 = printFullAge([2012, 1915, 1999]);
